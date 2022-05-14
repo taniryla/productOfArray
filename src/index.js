@@ -52,4 +52,9 @@
 // 20.  Can you improve the performance?
 // 21.   How have other people solved this problem?
 
-function productOfArray(arr) {}
+function productOfArray(arr) {
+  // base case
+  if (arr === 0) return 1;
+  //recursion
+  return arr * productOfArray(arr - 1);
+}
