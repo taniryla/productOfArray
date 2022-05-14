@@ -24,7 +24,7 @@
 
 // Step Two (Plan). Come up with concrete examples to help you understand the problem better. Find a connection between the data inputs and the unknown. You may be obliged to consider auxiliary problems if an immediate connection cannot be found.
 // 8.  Have you seen it before? Or have you seen the same problem in a slightly different form? Do you know a related problem?
-
+// like factorial recursion problem but just have to take out of arrays
 // 9.   Do you know a coding strategy that could be useful? Look at the unknown! And try to think of a familiar problem having the same or a similar unknown. Here is a problem related to yours and solve before. Could you use it? Could you use its result? Could you use its method?
 // recursion
 
@@ -53,10 +53,13 @@
 // 21.   How have other people solved this problem?
 
 function productOfArray(arr) {
-  //recursion
-  for (num in arr) {
+  // iterate through each item in the array
+  for (let i = 0; i < arr.length; i++) {
     // base case
-    if (num === 0) return 1;
+    if (arr[i].length) {
+      return;
+    }
+    //recursion
     return num * productOfArray(num - 1))
   }
 }
