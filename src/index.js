@@ -54,12 +54,9 @@
 
 function productOfArray(arr) {
   // iterate through each item in the array
-  for (let i = 0; i < arr.length; i++) {
-    // base case
-    if (arr[i].length) {
-      return;
-    }
-    //recursion
-    return num * productOfArray(num - 1))
+  if (arr.length === 0) {
+    return 1;
   }
+  //recursion
+  return arr[0] * productOfArray(arr.slice(1));
 }
