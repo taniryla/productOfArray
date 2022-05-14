@@ -53,8 +53,10 @@
 // 21.   How have other people solved this problem?
 
 function productOfArray(arr) {
-  // base case
-  if (arr === 0) return 1;
   //recursion
-  return arr * productOfArray(arr - 1);
+  for (num in arr) {
+    // base case
+    if (num === 0) return 1;
+    return num * productOfArray(num - 1))
+  }
 }
