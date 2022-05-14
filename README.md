@@ -1,0 +1,2 @@
+# productOfArray
+Created with CodeSandbox
